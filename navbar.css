@@ -1,0 +1,43 @@
+.nav-container {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid black;
+    background-color: aliceblue;
+}
+
+.nav-wrapper {
+    width: 75vw;
+    height: 100%;
+    margin: auto;
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 16px;
+    max-height: 100%;
+}
+
+.grid-item {
+    max-height: 75px;
+    max-width: 100%;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.list li {
+    padding: 10px;
+}
+
+.list li:hover {
+    opacity: 0.90;
+    scale: 1.05;
+    transition: cubic-bezier(1, 0, 0, 1);
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+}

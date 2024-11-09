@@ -1,0 +1,24 @@
+@font-face {
+    font-family: maison;
+    src: url('./MaisonNeue-ExtendedBook.ttf');
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+h1 {
+    font-weight: 600;
+}
+
+p, span, div, li {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+:root {
+    font-family: maison, sans-serif;
+
+}
