@@ -3,6 +3,9 @@
     height: 80px;
     border-bottom: 1px solid black;
     background-color: aliceblue;
+    position: fixed; 
+    top: 0;
+    padding-bottom: 10px;
 }
 
 .nav-wrapper {
@@ -46,3 +49,4 @@
     color: #333;
     text-transform: none;
 }
+

@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./navbar.css">
     <link rel="stylesheet" href="./globals.css">
+    <link rel="stylesheet" href="./home.css">
+    <script src="./scroll.js" defer></script>
 </head>
 <body>
 
@@ -18,17 +20,108 @@
                 <div class="grid-item"></div>
                 <div class="grid-item">
                     <ul class="list">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Our Team</a></li>
-                        <li><a href="">Application</a></li>
-                        <li><a href="">VLE</a></li>
+                        <li onclick="scrollToSmooth(0)">Home</li>
+                        <li onclick="scrollToSmooth(700)">Our Team</li>
+                        <li onclick="scrollToSmooth(1000)">Application</li>
+                        <li onclick="scrollToSmooth(1000)">VLE</li>
                     </ul>
                 </div>
             </div>
         </section>
     </nav>
 
-    <h1>hello</h1>
+    <section class="hero-container">
+        <div class="hero-grid">
+            <div class="hero-grid-item">
+                <img src="./hero-image.png" alt="">
+            </div>
+            <div class="hero-grid-item">
+                <div class="hero-content">
+                    <h1>Welcome to Hot Beans</h1>
+                    <p>Hot Beans fuels your brand with expert web development, combining innovative design with powerful functionality. Our team crafts responsive, high-performance websites that elevate user experience and drive results. From seamless UX to secure back-end solutions, Hot Beans is where creativity and technology meet to spark your digital success.</p>
+                    <a href=""><button class="default-btn">Join Us!</button></a>
+                </div>              
+            </div>
+        </div>
+    </section >    
+
+    <section class="team-container">
+        <div class="team-wrapper">
+            <div class="team-content">
+                <h1>Meet the Team</h1>
+            </div>
+            <div class="team-grid">
+                <div class="team-item">
+                    <div class="team-item-container">
+                        <div class="team-item-content">
+                            <div class="team-member-container">
+                                <img src="./images2.png" alt="John Doe - Team Leader">
+                                <span>Yung wei mon</span>
+                            </div>
+                            <p>Team Leader with a passion for innovation and driving impactful digital solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <div class="team-item-container">
+                        <div class="team-item-content">
+                            <div class="team-member-container">
+                                <img src="./images1.png" alt="Emily Smith - UX Designer">
+                                <span>rajeet Ramakrishnan </span>
+                            </div>
+                            <p>Creative UX Designer dedicated to crafting user-centered, engaging experiences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <div class="team-item-container">
+                        <div class="team-item-content">
+                            <div class="team-member-container">
+                                <img src="./images.png" alt="James Lee - Web Developer">
+                                <span>Bruce Lee</span>
+                            </div>
+                            <p>Web Developer skilled in responsive design and optimizing performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <div class="team-item-container">
+                        <div class="team-item-content">
+                            <div class="team-member-container">
+                                <img src="./2Q.png" alt="Sophia Brown - Project Manager">
+                                <span>Sophia Brown</span>
+                            </div>
+                            <p>Project Manager ensuring timely delivery and exceptional project coordination.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <div class="team-item-container">
+                        <div class="team-item-content">
+                            <div class="team-member-container">
+                                <img src="./Z.png" alt="Michael Chen - Front-End Developer">
+                                <span>Bartholomu Tyreece</span>
+                            </div>
+                            <p>Front-End Developer focused on building intuitive, dynamic interfaces.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <div class="team-item-container">
+                        <div class="team-item-content">
+                            <div class="team-member-container">
+                                <img src="./images4.png" alt="Olivia Martinez - Back-End Developer">
+                                <span>Olivia Martinez</span>
+                            </div>
+                            <p>Back-End Developer expert in database management and server-side logic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
 
 </body>
 </html>

@@ -1,0 +1,105 @@
+.hero-container {
+    width: 100%;
+    height: 700px;
+    margin-top: 150px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 200px;
+    width: 75vw;
+    height: 100%;
+    margin: auto;
+}
+
+.hero-grid-item img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.hero-image-container {
+    width: 100%;
+}
+
+.hero-content {
+}
+
+.hero-content h1 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #666;
+}
+
+.hero-container p {
+    padding: 20px;
+
+}
+
+.team-content h1 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #666;
+    margin-bottom: 25px;
+}
+
+.team-wrapper {
+    width: 75vw;
+    height: 500px;
+    margin: auto;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.team-item {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #333;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: box-shadow 0.3s ease;
+}
+
+.team-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.team-item-container {
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.team-member-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.team-member-container img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.team-member-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.team-member-description {
+    margin-top: 10px;
+    color: #666;
+}
