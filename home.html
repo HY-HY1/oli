@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./globals.css">
     <link rel="stylesheet" href="./home.css">
     <script src="./scroll.js" defer></script>
+    <script src="./accordion.js" defer></script>
 </head>
 <body>
 
@@ -22,7 +23,7 @@
                     <ul class="list">
                         <li onclick="scrollToSmooth(0)">Home</li>
                         <li onclick="scrollToSmooth(700)">Our Team</li>
-                        <li onclick="scrollToSmooth(1000)">Application</li>
+                        <li onclick="scrollToSmooth(2300)">Application</li>
                         <li onclick="scrollToSmooth(1000)">VLE</li>
                     </ul>
                 </div>
@@ -120,6 +121,110 @@
             </div>
         </div>
     </section>
+
+    <section class="hiring-container">
+        <div class="hiring-wrapper">
+            <div class="hiring-heading">
+                <h1 class="heading">Join Our Team!</h1>
+                <p>We're looking for passionate individuals in web development who are ready to make an impact. Discover if this is the right opportunity for you.</p>
+            </div>
+            <div class="hiring-accordion">
+                <div class="accordion-container">
+                    <div class="accordion-item active">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>Specifications</span>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>
+                                We are looking for web developers who are highly skilled in both front-end and back-end technologies. The ideal candidate should have:
+                            </p>
+                            <ul>
+                                <li>Proficiency in HTML, CSS, JavaScript.</li>
+                                <li>Understanding of responsive design, cross-browser compatibility, and best SEO practices.</li>
+                                <li>Familiarity with version control systems (e.g., Git).</li>
+                                <li>Experience with  APIs and database management .</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <!-- Qualifications Accordion Item -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>Qualifications</span>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>To qualify for this role, applicants should have:</p>
+                            <ul>
+                                <li>Strong problem-solving skills and attention to detail.</li>
+                                <li>Excellent communication skills, both verbal and written.</li>
+                                <li>Ability to work collaboratively in a team environment and independently as required.</li>
+                                <li>Portfolio or examples of past web development projects (highly recommended).</li>
+                            </ul>
+                            <p>If you’re passionate about web development and eager to contribute to meaningful projects, we’d love to hear from you!</p>
+                        </div>
+                    </div>
+    
+                    <!-- FAQ Accordion Item -->
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <span>FAQ</span>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Frequently Asked Questions:</p>
+                            <ul>
+                                <li><strong>What is the work schedule?</strong> Our team works flexible hours, with core hours between 10 AM - 4 PM to accommodate team meetings.</li>
+                                <li><strong>Is remote work available?</strong> Yes, we offer a hybrid working model with the option to work remotely several days a week.</li>
+                                <li><strong>What is the hiring process like?</strong> The process includes an initial phone screening, a technical interview, and a final interview with team leads.</li>
+                                <li><strong>Are there opportunities for growth?</strong> Absolutely! We encourage continuous learning and offer opportunities for career advancement within the team.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-container">
+        <div class="form-wrapper">
+            <div>
+                <h1 class="heading">Apply Today</h1>
+            </div>
+            <div class="form">
+                <h2>Job Application Form</h2>
+                <form action="submit" method="POST">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" name="fullName" id="fullName" placeholder="Enter your full name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                    
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+            
+                    <label for="position">Position Applying For</label>
+                    <select name="position" id="position" required>
+                        <option value="">Select Position</option>
+                        <option value="webDeveloper">Web Developer</option>
+                        <option value="uiDesigner">UI Designer</option>
+                        <option value="projectManager">Project Manager</option>
+                        <option value="dataAnalyst">Data Analyst</option>
+                    </select>
+            
+                    <label for="cv">Upload CV</label>
+                    <input type="file" name="cv" id="cv" accept=".pdf,.doc,.docx" required>
+            
+                    <label for="coverLetter">Application Letter</label>
+                    <textarea name="coverLetter" id="coverLetter" rows="6" placeholder="Write your application letter here" required></textarea>
+            
+                    <button class="default-btn" type="submit">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
     
     
 
