@@ -163,6 +163,7 @@
 
 /* Form Section */
 .form-container {
+    
     width: 100vw;
     padding: 50px 0;
 }
@@ -199,4 +200,41 @@
 }
 
 
+.vle-container {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+}
 
+.box-wrapper {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 6px;
+}
+
+.box-item {
+    flex: 330px; 
+    height: 300px;
+    padding: 4px;
+    border: solid 1px #666;
+    border-radius: 10px;
+    padding: 10px;
+}
+.box-content {
+    width: 100%;
+}
+
+.box-content p {
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.box-content a {
+    color: #333;
+    text-decoration: none;
+}
+
+.box-content a:hover {
+    color: #333;
+    text-decoration: underline;
+}
